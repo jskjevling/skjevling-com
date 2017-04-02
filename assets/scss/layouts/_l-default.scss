@@ -1,0 +1,40 @@
+// --------------------------------------------------
+// Layout default
+// --------------------------------------------------
+
+header {
+
+  font-family: $headerFont;
+  font-weight: 300;
+  width: 100%;
+  height: 80px;
+
+  img.logo {
+      width: 367px;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  hr {
+      position: relative;
+      right: 0px;
+      width: 100%;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  nav {
+    @include grid-column;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+footer {
+  @include grid-row;
+  background-color: $light-gray;
+
+  nav {
+    @include grid-column;
+  }
+}

@@ -1,0 +1,23 @@
+---
+layout: blog
+title: BLOG
+---
+
+<section class="grid post-listing" style="margin-top: 10px;">
+{% for post in site.categories.blog %}
+  {% if post.url %}
+  <div class="grid-item blog-preview">
+      <a href="{{ post.url }}">
+          <img class="blog-list-img" src="{{ site.url }}{{ post.feature-image }}" />
+          <div class="excerpt-display">
+              <h2 class="preview-title">{{ post.title }}</h2>
+              <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+              <div class="gradient-overlay">
+                  <span class="more-link">MORE ></span>
+              </div>
+          </div>
+      </a>
+  </div>
+  {% endif %}
+{% endfor %}
+</section>

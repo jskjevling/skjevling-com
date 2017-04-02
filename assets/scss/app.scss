@@ -1,0 +1,469 @@
+// --------------------------------------------------
+// APP.SCSS
+// --------------------------------------------------
+// This is our main SCSS file that imports everything
+// that gets compiled into app.css
+
+// Import order:
+// 1.  Encoding
+// 2.  Variables
+// 3.  Fonts
+// 4.  Foundation
+// 5.  Helpers
+//
+// SMACSS Architecture
+// 6.  Base
+// 7.  Layout
+// 8.  Modules
+// 9.  State
+// 10. Theme
+
+//
+// 1. Encoding
+// --------------------------------------------------
+@charset 'UTF-8';
+
+//
+// 2. Variables
+// --------------------------------------------------
+
+// Import our global variables first so we can use
+// them in Foundations's variables file
+
+// Global Config Variables
+@import 'base/config';
+
+//
+// 3. Fonts
+// --------------------------------------------------
+
+// Open Sans
+// @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+//
+// 4. Foundation
+// --------------------------------------------------
+// Source: http://foundation.zurb.com/docs/
+// Notes:
+// - Foundation's component styles are set
+//   in foundation/_settings.
+// - Modify the _settings.scss file before overriding
+//   the component styles on your own.
+// - Need a specific foundation component? Enable it
+//   in foundation/_foundation.scss.
+
+// Import all of Foundation
+@import 'foundation/foundation';
+
+//
+// 5. Helpers
+// --------------------------------------------------
+
+// Functions
+@import 'helpers/functions';
+
+// Mixins
+@import 'helpers/mixins';
+
+//
+// 6. Base
+// --------------------------------------------------
+@import 'base/headings';
+@import 'base/links';
+
+//
+// 7. Layout
+// --------------------------------------------------
+@import 'layouts/l-default';
+@import 'layouts/l-index';
+@import 'layouts/l-page';
+@import 'layouts/l-post';
+
+//
+// 8. Modules
+// --------------------------------------------------
+@import 'modules/m-your-module';
+
+//
+// 9. State
+// --------------------------------------------------
+@import 'states/s-your-module';
+
+//
+// 10. Theme
+// --------------------------------------------------
+@import 'themes/theme';
+
+// 11. Custom Styles
+// -----------------
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
+
+$app-font-main: 'Josefin Sans', Helvetica, Arial, sans-serif;
+$app-font-sub: 'Roboto', Helvetica, Arial, sans-serif;
+
+header {
+    font-family: $app-font-main;
+    position: fixed;
+    background-color: #FFF;
+    z-index: 999;
+}
+
+header > nav {
+    padding-right: 0px;
+}
+
+header > nav > ul > li > a.header-link {
+    color: #000;
+    padding: 0px 30px;
+    font-size: 20px;
+}
+
+.header-link:last-child {
+    padding-right: 0px;
+}
+
+main {
+    font-family: $app-font-sub;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.page-title {
+    font-family: $app-font-main;
+    font-size: 2rem;
+}
+
+.tagline {
+    font-family: $app-font-sub;
+    color: #666;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.copy {
+    font-family: $app-font-sub;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+// 1X. Index list styles
+// ------------------------
+
+.post-listing {
+    display: inline-block !important;
+    position: relative;
+    width: 900px;
+    margin-top: 116px;
+    margin-right: 0px;
+}
+
+.blog-preview, .code-preview, .music-preview {
+    position: relative;
+    width: 408px;
+    height: 466px;
+    border-bottom: 1px solid #666;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(100,100,100,.05);
+}
+
+.photo-preview, .illustration-preview {
+    position: relative;
+    width: 408px;
+    height: 266px;
+    overflow: hidden;
+    border-bottom: 1px solid #666;
+    box-shadow: 0px 10px 20px rgba(100,100,100,.05);
+}
+
+.blog-preview img, .code-preview img, .photo-preview img, .music-preview img, .illustration-preview img {
+    width: 100%;
+}
+
+.excerpt-display {
+    width: 100%;
+    height: 200px;
+    background-color: #FFF;
+    overflow: hidden;
+    position: absolute;
+    top: 265px;
+    padding: 20px;
+}
+
+.title-display {
+    width: 100%;
+    height: 50px;
+    background-color: #FFF;
+    overflow: hidden;
+    position: absolute;
+    top: 216px;
+    padding: 10px 20px;
+}
+
+.excerpt-display > h2, .title-display > h2 {
+    font-family: $app-font-main;
+    font-size: 24px;
+    color: #666;
+}
+
+.excerpt-display > p {
+    font-family: $app-font-sub;
+    font-size: 14px;
+    line-height: 14px;
+    color: #666;
+}
+
+.gradient-overlay {
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 72%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 72%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(255,255,255,1) 72%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.more-link {
+    position: absolute;
+    bottom: 20px;
+    right: 50px;
+    color: #666;
+}
+
+.api-display {
+    position: relative;
+    top: 80px;
+    float: right;
+    width: 286px;
+}
+
+.ig-api {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 280px;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.ig-api h3 {
+    width: 100%;
+    font-family: $app-font-main;
+    font-size: 20px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.ig-img {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 10px;
+}
+
+.twitter-api {
+    position: relative;
+    width: 280px;
+    height: 600px;
+}
+
+#twitter-widget-0 > a {
+    color: #F00;
+}
+
+// 1X. Blog-specific Styles
+// ------------------------
+
+.blog-item {
+    list-style: none;
+}
+
+.blog-item p {
+    color: #999;
+    font-size: 12px;
+}
+
+.blog-list-img {
+    display: block;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+article p {
+    color: #666;
+    font-size: 14px;
+}
+
+.article-img, .main-img {
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1250px) {
+    .content {
+        margin-top: 80px;
+    }
+
+    .content h1 {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    .content p {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1199px) {
+    .post-listing {
+        display: inline-block !important;
+        margin: 80px auto 0px auto;
+        width: 900px;
+    }
+
+    .api-display {
+        float: none;
+        width: 480px;
+        top: 0px;
+        margin: 0px auto;
+    }
+
+    .ig-api {
+        width: 400px;
+        height: 410px;
+    }
+
+    .twitter-api {
+        width: 400px;
+        height: 500px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+
+    .content h1 {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    .content p {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 840px) and (max-width: 899px) {
+    .post-listing {
+        position: relative;
+        display: inline-block !important;
+        margin: 80px 0px 0px 40px;
+        width: 408px;
+    }
+
+    .api-display {
+        position: relative;
+        right: 80px;
+        top: 80px;
+        float: right;
+        width: 286px;
+    }
+
+    .ig-api {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 280px;
+        height: 320px;
+        overflow: hidden;
+        margin-bottom: 40px;
+    }
+
+    .twitter-api {
+        position: relative;
+        width: 280px;
+        height: 600px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+
+    .content h1 {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+
+    .content p {
+        margin-left: 40px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 839px) {
+    header > nav > ul > li > a.header-link {
+        padding: 0px 10px;
+        font-size: 16px;
+    }
+
+    main > p {
+        top: 80px;
+        left: 32px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+
+    main {
+        position: relative;
+    }
+
+    .post-listing {
+        position: relative;
+        display: block !important;
+        margin: 80px auto 0px auto;
+        width: 408px;
+    }
+
+    .api-display {
+        float: none;
+        width: 408px;
+        top: 0px;
+        margin: 0px auto;
+    }
+
+    .ig-api {
+        width: 400px;
+        height: 410px;
+    }
+
+    .twitter-api {
+        width: 400px;
+        height: 500px;
+    }
+
+    .content {
+        margin-top: 80px;
+    }
+
+    .content h1 {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .content p {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+}

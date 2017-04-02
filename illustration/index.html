@@ -1,0 +1,19 @@
+---
+layout: illustration
+title: ILLUSTRATION
+---
+
+<section class="grid post-listing" style="margin-top: 10px;">
+{% for post in site.categories.illustration %}
+  {% if post.url %}
+  <div class="grid-item photo-preview">
+      <a href="{{ post.url }}">
+          <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+          <div class="title-display">
+              <h2 class="preview-title">{{ post.title }}</h2>
+          </div>
+      </a>
+  </div>
+  {% endif %}
+{% endfor %}
+</section>
