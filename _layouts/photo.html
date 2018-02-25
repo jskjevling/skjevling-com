@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<main>
+    <div class="content">
+        <article>
+          <img class="main-img" src="{{ page.feature-image }}" />
+          <h1 class="page-title">{{ page.title }}</h1>
+          <p class="meta">{{ page.date | date_to_string }}</p>
+          <p class="post-content">
+          {{ content }}
+          </p>
+        </article>
+    </div>
+</main>

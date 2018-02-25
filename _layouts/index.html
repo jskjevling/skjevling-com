@@ -1,0 +1,92 @@
+---
+layout: default
+---
+
+<main>
+    {{ content }}
+<section class="grid post-listing">
+    <!-- This loops through the paginated posts -->
+    {% for post in site.posts %}
+        {% if post.category == "blog" %}
+            {% if post.url %}
+            <div class="grid-item blog-preview">
+                <a href="{{ post.url }}">
+                    <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+                    <div class="excerpt-display">
+                        <h2 class="preview-title">{{ post.title }}</h2>
+                        <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                        <div class="gradient-overlay">
+                            <span class="more-link">MORE ></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endif %}
+        {% if post.category == "code" %}
+            {% if post.url %}
+            <div class="grid-item code-preview">
+                <a href="{{ post.url }}">
+                    <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+                    <div class="excerpt-display">
+                        <h2 class="preview-title">{{ post.title }}</h2>
+                        <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                        <div class="gradient-overlay">
+                            <span class="more-link">MORE ></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endif %}
+        {% if post.category == "illustration" %}
+            {% if post.url %}
+            <div class="grid-item photo-preview">
+                <a href="{{ post.url }}">
+                    <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+                    <div class="title-display">
+                        <h2 class="preview-title">{{ post.title }}</h2>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endif %}
+        {% if post.category == "music" %}
+            {% if post.url %}
+            <div class="grid-item music-preview">
+                <a href="{{ post.url }}">
+                    <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+                    <div class="excerpt-display">
+                        <h2 class="preview-title">{{ post.title }}</h2>
+                        <p class="post-excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                        <div class="gradient-overlay">
+                            <span class="more-link">MORE ></span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endif %}
+        {% if post.category == "photography" %}
+            {% if post.url %}
+            <div class="grid-item illustration-preview">
+                <a href="{{ post.url }}">
+                    <img class="list-img" src="{{ site.url }}{{ post.feature-image }}" />
+                    <div class="title-display">
+                        <h2 class="preview-title">{{ post.title }}</h2>
+                    </div>
+                </a>
+            </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</section>
+<section class="api-display">
+    <div class="ig-api" id="instafeed">
+        <h3>Instagram:</h3>
+    </div>
+    <div class="twitter-api">
+        <a class="twitter-timeline" data-width="280" data-height="500" data-link-color="#FAB81E" href="https://twitter.com/_skjevling">Tweets by _skjevling</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</section>
+</main>

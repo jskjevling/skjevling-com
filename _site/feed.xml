@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title></title>
+        <description>The online portfolio and shop for for artist, musician, and programmer Jeremy Skjevling.</description>      
+        <link></link>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+        
+            <item>
+                <title>The Process of Fields</title>
+                
+                    <description>&lt;p&gt;Less than fifteen minutes now.  I have a fear of writing in public places, as if someone might see or read over my shoulder and have a bunch of opinions.  Isn’t that weird?  Isn’t it weird that I’m afraid of other people’s opinions?  I mean, really, what sense does that make?&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Tue, 25 Jul 2017 00:00:00 -0400</pubDate>
+                <link>/blog/2017/07/25/the-process-of-fields/</link>
+                <guid isPermaLink="true">/blog/2017/07/25/the-process-of-fields/</guid>
+            </item>
+        
+            <item>
+                <title>Even the Smallest Beliefs</title>
+                
+                    <description>&lt;p&gt;Beliefs are everywhere. They’re in everything we do, from how we style our hair to how we go to sleep at night. They’re in the car we drive and the home we live in. They’re in how we approach a new problem and how we respond to crisis.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Sat, 03 Dec 2016 00:00:00 -0500</pubDate>
+                <link>/blog/2016/12/03/even-the-smallest/</link>
+                <guid isPermaLink="true">/blog/2016/12/03/even-the-smallest/</guid>
+            </item>
+        
+            <item>
+                <title>The Act of Reconstruction</title>
+                
+                    <description>&lt;p&gt;It has been quite the year. I think I might still be absorbing it all. This has been a year of massive growth, as well as massive upset, from macrocosm to microcosm.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Fri, 25 Nov 2016 00:00:00 -0500</pubDate>
+                <link>/blog/2016/11/25/act-of-reconstruction/</link>
+                <guid isPermaLink="true">/blog/2016/11/25/act-of-reconstruction/</guid>
+            </item>
+        
+            <item>
+                <title>Assertion and Repetition - 20 Years of Middle Room</title>
+                
+                    <description>&lt;p&gt;After a fair bit of consideration, I went ahead and released a significant stash of old material in the form of a fake-ish anthology.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 15 Sep 2016 00:00:00 -0400</pubDate>
+                <link>/music/2016/09/15/assertion-and-repetition/</link>
+                <guid isPermaLink="true">/music/2016/09/15/assertion-and-repetition/</guid>
+            </item>
+        
+            <item>
+                <title>Pinned Content Module</title>
+                
+                    <description>&lt;p&gt;This is a javascript module I developed for pinning content to a location on screen and dropping back into document flow when the content is reached.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Tue, 09 Feb 2016 00:00:00 -0500</pubDate>
+                <link>/code/2016/02/09/pinned-content-module/</link>
+                <guid isPermaLink="true">/code/2016/02/09/pinned-content-module/</guid>
+            </item>
+        
+            <item>
+                <title>Solar Fire</title>
+                
+                    <description>&lt;p&gt;The very first truck single has been released into the wild.  It’s titled Solar Fire and you can find it on cdbaby and many other places.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Mon, 15 Jun 2015 00:00:00 -0400</pubDate>
+                <link>/music/2015/06/15/solar-fire/</link>
+                <guid isPermaLink="true">/music/2015/06/15/solar-fire/</guid>
+            </item>
+        
+            <item>
+                <title>Road to Nowhere</title>
+                
+                    <description>&lt;p&gt;18″ x 24″ Collage on art board&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Mon, 23 Mar 2015 00:00:00 -0400</pubDate>
+                <link>/illustration/2015/03/23/road-to-nowhere/</link>
+                <guid isPermaLink="true">/illustration/2015/03/23/road-to-nowhere/</guid>
+            </item>
+        
+            <item>
+                <title>Smile!</title>
+                
+                    <description>&lt;p&gt;A quick, creepy, late night portrait study.  Smile!&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 04 Sep 2014 00:00:00 -0400</pubDate>
+                <link>/illustration/2014/09/04/smile/</link>
+                <guid isPermaLink="true">/illustration/2014/09/04/smile/</guid>
+            </item>
+        
+            <item>
+                <title>Physics!</title>
+                
+                    <description>&lt;p&gt;A 2-minute light painting I did during a night shoot in California.&lt;/p&gt;
+</description>
+                
+                <pubDate>Sun, 27 Apr 2014 00:00:00 -0400</pubDate>
+                <link>/photography/2014/04/27/physics/</link>
+                <guid isPermaLink="true">/photography/2014/04/27/physics/</guid>
+            </item>
+        
+            <item>
+                <title>The Game</title>
+                
+                    <description>&lt;p&gt;18″ x 24″ India ink on paper.&lt;/p&gt;
+
+</description>
+                
+                <pubDate>Thu, 17 Apr 2014 00:00:00 -0400</pubDate>
+                <link>/illustration/2014/04/17/the-game/</link>
+                <guid isPermaLink="true">/illustration/2014/04/17/the-game/</guid>
+            </item>
+        
+    </channel>
+</rss>
